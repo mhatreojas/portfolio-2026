@@ -39,7 +39,7 @@ export default function Contact() {
                 </div>
 
                 <div className="contact-footer">
-                    <p>© 2024 Portfolio. All rights reserved.</p>
+                    <p>Made with ❤️ by Ojas Mhatre © 2026</p>
                 </div>
             </div>
         </section>
