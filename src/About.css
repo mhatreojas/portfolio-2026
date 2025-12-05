@@ -1,0 +1,117 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+}
+
+.about-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 16px 0;
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 48px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 48px 0;
+    text-align: center;
+}
+
+.skills-section {
+    margin-top: 48px;
+}
+
+.skills-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 24px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+}
+
+.skill-card {
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card:hover {
+    background: rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 20px;
+    }
+
+    .about-content {
+        padding: 32px 24px;
+    }
+
+    .about-text {
+        font-size: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 12px;
+    }
+
+    .skill-card {
+        padding: 12px;
+    }
+
+    .skill-name {
+        font-size: 14px;
+    }
+}
